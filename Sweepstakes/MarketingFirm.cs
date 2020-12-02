@@ -8,8 +8,11 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
-        void CreateMarketingFirmWithManager()
+        public ISweepstakesManager _manager;
+        
     }
 }
 
 //Create a MarketingFirm class with functionality to create a sweepstakes.
+
+//Implement dependency injection in this MarketingFirm class in order to utilize a sweepstakes manager.

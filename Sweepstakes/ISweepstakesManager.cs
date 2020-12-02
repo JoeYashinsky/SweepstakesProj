@@ -11,14 +11,11 @@ namespace Sweepstakes
 
 
 
-        public void InsertSweepstakes(Sweepstakes sweepstakes)
-        {
+        void InsertSweepstakes(Sweepstakes sweepstakes);
+        Sweepstakes GetSweepstakes();
+        
 
-        }
-
-        public Sweepstakes GetSweepstakes()
-        {
-
-        }
+        
+       
     }
 }
