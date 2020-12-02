@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    public class Contestant
+    class Simulation
     {
-        string firstName;
-        string lastName;
-        string emailAddress;
-        int registrationNumber;
-
-        public Contestant()
+        void CreateMarketingFirmWithManager()
         {
 
         }
