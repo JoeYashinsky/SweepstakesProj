@@ -16,15 +16,21 @@ namespace Sweepstakes
 
         public static string AssignFirstName()
         {
-
+            Console.WriteLine("Please provide your first name: ");
+            string firstName = Console.ReadLine();
+            return firstName;
         }
         public static string AssignLastName()
         {
-
+            Console.WriteLine("Please provide your last name: ");
+            string lastName = Console.ReadLine();
+            return lastName;
         }
         public static string AssignEmailAddress()
         {
-
+            Console.WriteLine("Please provide your email address: ");
+            string emailAddress = Console.ReadLine();
+            return emailAddress;
         }
         public static int AssignRegistrationNumber()
         {
