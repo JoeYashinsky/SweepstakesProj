@@ -1,1 +1,11 @@
-﻿
+﻿//As a developer, I want to document (text file, comment in code, etc.) where I am using dependency injection and what benefits it adds to the structure of my application.
+
+Dependency injection is beneficial because it gives our code more flexibility. No longer does a class need to depend specifically on a singular class/object being passed in, but can instead
+take in an interface that any number of classes could be inheriting from. Like a DiscPlayer that can take in a DvdDisc or a BluRayDisc or a CdDisc, now the DiscPlayer does not need
+to specifically depend on of those specific objects being passed in, but can successfully take in the interface those classes all inherit from (like IReadable).
+
+With the Sweepstakes project, the ISweepstakesManager interface serves as the class that the SweepstakesStackManager and SweepstakesQueueManager classes can both inherit from.
+Now within the constructor of the MarketingFirm class, I am able to pass in type ISweepstakesManager and it won't need to specifically be either the 
+StackManager or QueueManager, since they are both inheriting the interface of ISweepstakesManager. 
+
+This allows for other classes to be added that also implement the ISweepstakesManager interface and it won't affect the code throughout other classes.
