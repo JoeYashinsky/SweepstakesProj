@@ -22,3 +22,5 @@ namespace Sweepstakes
         }
     }
 }
+
+//Create a SweepstakesStackManager class that uses the Stack data structure as an underlying structure
