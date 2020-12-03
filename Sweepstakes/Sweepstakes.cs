@@ -10,17 +10,17 @@ namespace Sweepstakes
     {
         private string name;
         public string Name { get { return name; } }
-        public Dictionary<int, Contestant> contestants;
+        public Dictionary<int, Contestant> contestants;    //type of Key, type of Value
 
-        public Sweepstakes()
+        public Sweepstakes(string sweepstakesName)
         {
-
-
+            contestants = new Dictionary<int, Contestant>();
+            name = sweepstakesName;
         }
 
         public void RegisterContestant(Contestant contestant)
         {
-
+            contestants.Add(contestant.RegistrationNumber, contestant);
         }
 
         public Contestant PickWinner()

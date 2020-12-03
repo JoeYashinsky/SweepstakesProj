@@ -10,6 +10,7 @@ namespace Sweepstakes
     {
         public ISweepstakesManager _manager;
 
+        // Marketing Firm should be able to utilize an ISweepstakesManager, be that EITHER StackManager or QueueManager.
         public MarketingFirm(ISweepstakesManager manager)
         {
             _manager = manager;
@@ -25,3 +26,4 @@ namespace Sweepstakes
 //Create a MarketingFirm class with functionality to create a sweepstakes.
 
 //Implement dependency injection in this MarketingFirm class in order to utilize a sweepstakes manager.
+
