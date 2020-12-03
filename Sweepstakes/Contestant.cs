@@ -13,14 +13,17 @@ namespace Sweepstakes
        public string EmailAddress;
        public int RegistrationNumber;
 
-    public Contestant(string firstName, string lastName, string emailAddress, int registrationNumber)
+    public Contestant()
         {
-            this.FirstName = firstName;
-            this.LastName = lastName;
-            this.EmailAddress = emailAddress;
-            this.RegistrationNumber = registrationNumber;
+            FirstName = UserInterface.AssignFirstName();
+            LastName = UserInterface.AssignLastName();
+            EmailAddress = UserInterface.AssignEmailAddress();
+            RegistrationNumber = UserInterface.AssignRegistrationNumber();
         }
        
            
     }
 }
+//Create a User Interface for any information the application would need to get from the user. One example would be functionality
+// to assign a Contestant object a first name, last name, email address, and registration number.
+//utilize UserInterface methods to retrieve firstName, lastName, etc.
