@@ -10,6 +10,10 @@ namespace Sweepstakes
     {
         public Stack<Sweepstakes> stack;
 
+        public SweepstakesStackManager()
+        {
+
+        }
         
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
