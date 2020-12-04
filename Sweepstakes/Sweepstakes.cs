@@ -10,6 +10,7 @@ namespace Sweepstakes
     {
         private string name;
         public string Name { get { return name; } }
+        Random rng = new Random();
         public Dictionary<int, Contestant> contestants;    //type of Key, type of Value
 
         public Sweepstakes(string name)
@@ -25,10 +26,9 @@ namespace Sweepstakes
 
         public Contestant PickWinner()
         {
-            int sweepstakesWinner;
-            sweepstakesWinner = 
+            Contestant winningContestant = contestants[rng.Next(contestants.Count)];
             Console.WriteLine("The winner of the sweepstakes is {Contestant.FirstName} + {Contestant.LastName}");
-            return sweepstakesWinner;
+            return winningContestant;
         }
 
         public void PrintContestantInfo(Contestant contestant)
