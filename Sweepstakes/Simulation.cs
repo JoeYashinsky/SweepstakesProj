@@ -20,10 +20,10 @@ namespace Sweepstakes
             switch (UserChoice)
             {
                 case 0:
-                    manager = SweepstakesStackManager;
+                    manager = "StackManager";
                     break;
                 case 1:
-                    manager = SweepstakesQueueManager;
+                    manager = "QueueManager";
                     break;
                 default:
                     Console.WriteLine("Not a valid option");

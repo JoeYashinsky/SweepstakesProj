@@ -34,6 +34,9 @@ namespace Sweepstakes
         }
         public static int AssignRegistrationNumber()
         {
+            Console.WriteLine("Please provide your registration number");
+            int registrationNumber = int.Parse(Console.ReadLine());
+            return registrationNumber;
 
         }
     }

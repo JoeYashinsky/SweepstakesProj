@@ -15,6 +15,7 @@ namespace Sweepstakes
 
     public Contestant()
         {
+            Contestant contestant = new Contestant();
             FirstName = UserInterface.AssignFirstName();
             LastName = UserInterface.AssignLastName();
             EmailAddress = UserInterface.AssignEmailAddress();
