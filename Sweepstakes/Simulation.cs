@@ -14,7 +14,9 @@ namespace Sweepstakes
         {
             MarketingFirm marketFirm = new MarketingFarm();
             ISweepstakesManager manager;
-            
+            Console.WriteLine("Choose between 1)SweepstakesStackManager or 2)SweepstakesQueueManager");
+            string userChoice = Console.ReadLine();
+
             switch (UserChoice)
             {
                 case 0:

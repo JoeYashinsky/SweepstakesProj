@@ -18,10 +18,16 @@ namespace Sweepstakes
 
         public void CreateSweepstake()
         {
-
+             Sweepstakes sweepstakes = new Sweepstakes(UserInterface.GetUserInputFor("What is the title of this sweepstakes?"));
+            _manager.InsertSweepstakes(sweepstakes);
         }
     }
 }
+//in userinterface class
+//public static string GetUserInputFor(string prompt)
+//{
+//    Console.WriteLine(prompt);
+//    return Console.ReadLine();
 
 //Create a MarketingFirm class with functionality to create a sweepstakes.
 
